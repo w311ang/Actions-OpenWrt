@@ -63,6 +63,7 @@ jobs:
         git clone $REPO_URL -b $REPO_BRANCH openwrt
         ln -sf /workdir/openwrt $GITHUB_WORKSPACE/openwrt
 
+    #https://github.com/coolsnowwolf/lede/pull/7796
     - name: cache
       uses: klever1988/cachewrtbuild@main
       with:
