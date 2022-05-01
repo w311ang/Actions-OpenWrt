@@ -33,8 +33,7 @@ jobs:
 
     steps:
     - name: Checkout
-      uses: actions/checkout@mainpermissions:
-      actions: write
+      uses: actions/checkout@main
 
     - name: Initialization environment
       env:
