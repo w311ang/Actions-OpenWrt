@@ -30,10 +30,13 @@ env:
 jobs:
   build:
     runs-on: ubuntu-20.04
+    permissions:
+      actions: write
 
     steps:
     - name: Checkout
-      uses: actions/checkout@main
+      uses: actions/checkout@mainpermissions:
+      actions: write
 
     - name: Initialization environment
       env:
